@@ -1,0 +1,90 @@
+.white-text {
+  font-weight: bold;
+  font-size: 1.0em;
+  color: #F8F8F8;
+}
+
+.my-bold strong,
+.my-bold b{
+  font-weight: bold;
+  color:  #F8F8F8; ; /* Change the color value to your desired color */
+}
+
+.white-title h2{
+  color: #F8F8F8;
+}
+
+.white-title-small h3{
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #F8F8F8;
+}
+
+
+/* slide background color  */
+
+.light-slide {
+  color: black;
+  background-color: 	#D3D3D3;
+}
+
+/* adding transparent background to slide  */
+
+.bg_allport {
+  position: relative;
+  z-index: 1;
+}
+
+.bg_allport::before {    
+      content: "";
+      background-image: url('graphics/allport.jpg');
+      background-size: 70%;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.55;
+      z-index: -1;
+}
+
+
+.map_background {
+    position: relative;
+    z-index: 1;
+     }
+
+.map_background::before {
+  content: "";
+  background-image: url('graphics/nationwide_241000.png');
+  background-size: 175%;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.65;
+  z-index: -1;
+}
+
+
+
+
+.chicago_background {
+    position: relative;
+    z-index: 1;
+     }
+
+.chicago_background::before {    
+      content: "";
+      background-image: url('graphics/map-16980.jpg');
+      background-size: 150%;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.50;
+      z-index: -1;
+}
